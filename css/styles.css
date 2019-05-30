@@ -1,59 +1,102 @@
 body{
     background-color:#404040;
-    font-family: 'Quicksand', sans-serif;
     color: white;
+    font-family: 'Slabo 13px';
+    font-size: 15px;
+    margin: 0;
     
     }
 
 h1{
   background-color: #2D2D2D;
-  font-weight: bold;
+  font-family: 'Ultra', "Arial Black", serif;
+  font-size: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin: 0;
 }
 
-.guide{
-  text-align: justify;
-  display: inline;
-  padding: 20px;
+h2{
+  font-family: "Stint Ultra Expanded", "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 32px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#topMenu{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+  background: red;
   font-size: 20px;
 }
 
+.guide{
+  float: center;
+  text-align: center;
+  border-bottom: 1px solid white
+}
+
+.guide:last-child{
+  border-bottom: none;
+}
+
 a{
+  display: block;
   color: white;
-  text-decoration: none;
+  text-align: center;
+  padding: 10px 10px;
 }
 
 img {
   width: 100%;
   height: 700px;
-  position: relative;
+  object-fit: cover;
 }
 
-#today{
+.sectionTitle{
+  font-family: "Stint Ultra Expanded";
+  font-size: 36px;
+  font-weight: 400;
+  letter-spacing: .02em;
   text-align: center;
 }
 
 #special{
-  font-size: 30px; 
-} 
-
-.sectionTitle{
-  text-align: center;
-  font-size: 36px;
-}
-
-.pizza {
-  column-count: 2;
-  /* column-span: all */
-  column-gap: 70px;
   text-align: center;
   font-size: 24px;
-  position: relative
+}
+
+
+.pizza {
+  display: flex;
+  text-align: center;
+  font-size: 24px;
+}
+
+#rightMenu{
+  margin: 20px;
+  text-align: center;
 }
 
 
 #deal{
   text-align: center;
   font-size: 24px;
+}
+
+input[type="text"]{
+  position: center;
+  width: 200px;
+  padding: 10px 10px;  
+  margin: 5px;
+  font-size: 18px;
+
 }
 
 #addy{
@@ -63,5 +106,6 @@ img {
 } 
 
 footer{
+  display: inline;
   text-align: center;
 }
